@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-size: cover;
+    animation: bgChange 20s infinite;
+}
+
+header {
+    background-color: #130647;
+    color: #f6f3f1;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #ececf1;
+    text-decoration: none;
+}
+
+.logo-header {
+    background-color: #71638471;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 0.5rem;
+}
+
+h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.intro {
+    padding: 1rem;
+    text-align: end;
+    font-size: 1rem;
+    background-color: #4e3e59d2;
+    margin-bottom: 2rem;
+}
+
+.gallery {
+    padding: 1rem;
+}
+
+.image-grid {
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+}
+
+.image-grid img {
+    width: 210px;
+    height: 260px;
+    object-fit: cover;
+}
+
+.services {
+    background-color: #fbebd9ae;
+
+    padding: 2rem;
+    text-align: center;
+
+}
+
+
+.services-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+
+
+
+/* bouton*/
+.service-content {
+    margin-bottom: 1rem;
+}
+
+.read-more-button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem .5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-button:hover {
+    background-color: #555;
+}
+/* care avec video. text*/
+.service {
+    background-color: #f4f4f489;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+
+
+
+
+.service-content {
+    height: 10rem; /* Limite la hauteur du texte à 3rem */
+    overflow: hidden;
+    transition: height 0.3s ease; /* Ajoute une transition pour l'expansion */
+}
+
+/*image video*/
+
+.image-container {
+    width: 100%;
+    height: 40%; /* Ajustez la hauteur de l'image à 70% de l'espace disponible */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assurez-vous que l'image remplit correctement le conteneur */
+    border-radius: 3px;
+}
+
+
+.service-content.expanded {
+    height: auto; /* Affiche tout le texte lorsque la classe 'expanded' est ajoutée */
+}
+
+.read-more {
+    margin-top: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #555;
+}
+/*
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}*/
+
+footer { 
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed; /* Fixe le footer au bas de la page */
+    bottom: 0; /* Positionne le footer en bas de la page */
+    left: 5px; /* Indentation de 5px à gauche */
+    right: 5px; /* Indentation de 5px à droite */
+    padding-bottom: 5px; /* Ajoute une indentation de 5px en bas */
+    width: calc(100% - 10px); /* Ajuste la largeur pour inclure l'indentation sur les côtés */
+    z-index: 1000; /* Assure que le footer soit au-dessus des autres éléments si nécessaire */
+}
+/* Animation des images d'arrière-plan */
+@keyframes bgChange {
+    0% {
+        background-image: url('img/Capture d’écran 2024-10-22 114212.jpg');
+    }
+    33% {
+        background-image: url('img/Capture d’écran 2024-10-22 113122.jpg');
+    }
+    66% {
+        background-image: url('img/Capture d’écran 2024-10-22 113155.jpg');
+    }
+    100% {
+        background-image: url('img/Capture d’écran 2024-10-22 114126.jpg');
+    }
+}
+
+/* === Media Queries === */
+
+@media (min-width: 1680px) and (max-width: 1920px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .intro {
+        font-size: 1.2rem;
+    }
+
+    .image-grid img {
+        width: 240px;
+        height: 300px;
+    }
+
+    .services-grid {
+        gap: 3rem;
+    }
+
+    .service {
+        width: 300px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1680px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .intro {
+        font-size: 1.1rem;
+    }
+
+    .image-grid img {
+        width: 220px;
+        height: 270px;
+    }
+
+    .services-grid {
+        gap: 2.5rem;
+    }
+
+    .service {
+        width: 275px;
+    }
+}
+
+@media (max-width: 1279px) {
+    nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    nav ul.active {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 3rem;
+        right: 0;
+        background-color: #130647;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .image-grid {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .image-grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    .services-grid {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .service {
+        width: 100%;
+    }
+}
+
+/* Formulaire de contact */
+.contact-section {
+    margin-bottom: 100px;
+}
+
+.contact-form {
+    margin-top: 50px;
+}
+
+.contact-form .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select {
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+aside {
+    background-color: #7754727f;
+    color: #ffffff; /* Assure une bonne lisibilité du texte */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+aside ul li {
+    margin: 5px 0;
+}

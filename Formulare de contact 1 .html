@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous FAN SITE</title>
+    <link rel="stylesheet" href="fansite 1.css">
+</head>
+<body>
+    <!-- Header avec navigation -->
+    <header>
+        <h1>Contactez-nous</h1> 
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <!-- Section de contact -->
+        <section class="contact-section">
+           
+            <p>Remplissez le formulaire ci-dessous pour entrer en contact avec notre équipe.</p>
+
+            <!-- Formulaire de contact -->
+            <form class="contact-form" action="#" method="post">
+                <div class="form-grid">
+                    <!-- Civilité -->
+                    <div class="form-group">
+                        <label for="civilite">Civilité</label>
+                        <select id="civilite" name="civilite">
+                            <option value="monsieur">Monsieur</option>
+                            <option value="madame">Madame</option>
+                            <option value="mademoiselle">Mademoiselle</option>
+                        </select>
+                    </div>
+
+                    <!-- Nom -->
+                    <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+
+                    <!-- Prénom -->
+                    <div class="form-group">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+
+                    <!-- Adresse Postale -->
+                    <div class="form-group full-width">
+                        <label for="adresse">Adresse Postale</label>
+                        <input type="text" id="adresse" name="adresse" required>
+                    </div>
+
+                    <!-- Politique de confidentialité -->
+                    <div class="form-group full-width checkbox-group">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">J'accepte la <a href="#">politique de confidentialité</a>.</label>
+                    </div>
+
+                    <!-- Bouton de validation -->
+                    <div class="form-group full-width">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- Aside avec des informations de contact supplémentaires -->
+        <aside>
+            <h2>Informations de Contact</h2>
+            <p>Vous pouvez également nous joindre directement :</p>
+            <ul>
+                <li>Email: yuliia.sherstiuk@laplateforma.io</li>
+                
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; © 2024 Estate of Michael Jackson. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
