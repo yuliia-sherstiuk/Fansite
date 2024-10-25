@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'iran_sans_bold';
+    src: url('../Fonts/iran_sans_bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'iran_sans_light';
+    src: url('../Fonts/iran_sans_light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'iran_sans_medi';
+    src: url('../Fonts/iran_sans_medi.woff') format('woff');
+}
+:root{
+    --border:.1rem solid rgba(0,0,0,.1);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0.1);
+}
+*{
+    font-family:iran_sans_light;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    outline: none;
+    border: none;
+}
+.bio p{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+background-color: #fff;
+font-size: 14px;
+width: fit-content;
+}
+
+.actualité p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #fff;
+    font-size: 14px;
+    width: fit-content;
+    }
+
+.realisations p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #fff;
+        font-size: 14px;
+        width: fit-content;
+        }
+        
+.body{
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+}
+.container{
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 30px 10px;
+}
+header span{
+    color: #72c54c;
+    font-size: 2rem;
+}
+header h4{
+    margin-right: 80px;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header ul li{
+    margin-top: 5px;
+    margin-right: 50px;
+}
+header ul li a{
+    color: #5f5d5d;
+}
+.banner{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.text{
+    margin-bottom: 50px;
+    max-width: 600px;
+}
+.banner h1{
+    font-size: 4rem;
+    margin-bottom: 30px;
+    color: orangered;
+}
+.banner p{
+    max-width: 500px;
+    font-size: 1.5rem;
+}
+.btn{
+    margin-top: 50px;
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 5px;
+    background: orangered;
+    color: #fff;
+}
+.image img{
+    width: 280px;
+    margin-top: 10px;
+}
+.social-link{
+    transform: translateY(20px) translateX(30px);
+}
+.social-link i{
+    font-size: 25px;
+    border: 2px solid #4475e2;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 50%;
+}
+.social-link i:hover{
+    background: #4475e2;
+    color: #fff;
+    transform: translateY(5px);
+}
